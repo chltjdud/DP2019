@@ -145,22 +145,53 @@
                 </style>
                 <table>
                     <tr>
-                        <td colspan="3">up</td>
-                        <td colspan="3">2</td>
-                        <td>3</td>
+                        <td colspan="2">up</td>
+                        <td rowspan="2">right</td>
                     </tr>
                     <tr>
-                        <td rowspan="7">4</td>
-                        <td colspan="6">5</td>
-                        <td>6</td>
+                        <td rowspan="7">left</td>
+                        <td>center</td>
                     </tr>
                     <tr>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
+                        <td colspan="8">down</td>
                     </tr>
                 </table>
+                
+                <!-- from 양식지 -->
+                <form>
+                    <!-- text, password, radio, checkbox -->
+                    <input type="text" placeholder="아이디를 입력해주세요" value=""/>
+                    <input type="password" placeholder="암호를 입력해주세요" value=""/>
+                    <input type="radio" name="bt1" value="1"/>
+                    <input type="radio" name="bt1" value="2"/>
+                    <input type="radio" name="bt1" value="3"/>
+                    <!-- 같은 정보의 라디오 버튼의 이름은 같아야함 -->
+                    <input type="radio" name="bt2" value="1"/>
+                    <input type="radio" name="bt2" value="2"/>
+                    <input type="radio" name="bt2" value="3"/>
+                    <input type="checkbox" value="1"/>
+                    <input type="checkbox" value="2"/>
+                    <input type="checkbox" value="3"/>
 
+                    <select>
+                        <option>사이트 이름</option>
+                        <option>네이버</option>
+                        <option>구글</option>
+                        <option>페이스북</option>
+                    </select>
 
+                    <!-- cols 열갯수(글자수), rows 행갯수(줄수)-->
+                    <textarea cols="20" rows="3">
+                        ?
+                    </textarea>
+                    
+                    <!-- button 버튼-->
+                    <input type="button" value="버튼이름" />
+                    <input type="button" onclick="alert('테스트완료')" value="테스트 버튼"/>
+
+                    <!-- submit 제출 버튼-->
+                    <input type="submit" value="제출" />
+                    
+                </form>
     </body>
 </html>
